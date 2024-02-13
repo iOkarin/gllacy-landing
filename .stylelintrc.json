@@ -36,7 +36,7 @@
     "number-leading-zero": "always",
     "number-no-trailing-zeros": true,
     "length-zero-no-unit": true,
-    "string-quotes": "double",
+    "string-quotes": "single",
     "unit-case": "lower",
     "value-keyword-case": "lower",
     "value-list-comma-newline-after": "always-multi-line",
@@ -89,12 +89,8 @@
     "rule-empty-line-before": [
       "always",
       {
-        "except": [
-          "first-nested"
-        ],
-        "ignore": [
-          "after-comment"
-        ]
+        "except": ["first-nested"],
+        "ignore": ["after-comment"]
       }
     ],
     "media-feature-colon-space-after": "always",
@@ -111,13 +107,8 @@
     "at-rule-empty-line-before": [
       "always",
       {
-        "except": [
-          "first-nested",
-          "blockless-after-blockless"
-        ],
-        "ignore": [
-          "after-comment"
-        ]
+        "except": ["first-nested", "blockless-after-blockless"],
+        "ignore": ["after-comment"]
       }
     ],
     "at-rule-name-case": "lower",
@@ -141,9 +132,7 @@
     "max-nesting-depth": [
       2,
       {
-        "ignoreAtRules": [
-          "media"
-        ]
+        "ignoreAtRules": ["media"]
       }
     ],
     "max-empty-lines": 2,
