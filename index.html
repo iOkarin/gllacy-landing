@@ -17,33 +17,34 @@
     <meta property="og:url" content="абсолютный адрес страницы" />
     <title>Грейси</title>
   </head>
+
   <body>
     <header class="header">
-      <a class="header__logo" href="#">
+      <a class="logo" href="#">
         <img src="" alt="logo" />
       </a>
       <nav class="header__nav">
         <ul class="header__list header-list">
           <li class="header-list__item">
-            <a class="header-list__item--link" href="catalog.html">Каталог</a>
+            <a class="header-list__link" href="catalog.html">Каталог</a>
           </li>
           <li class="header-list__item">
-            <a class="header-list__item--link" href="#">Доставка и оплата</a>
+            <a class="header-list__link" href="#">Доставка и оплата</a>
           </li>
           <li class="header-list__item">
-            <a class="header-list__item--link" href="#">О компании</a>
+            <a class="header-list__link" href="#">О компании</a>
           </li>
         </ul>
-        <div class="header__container header-container">
-          <div class="header-container__search">
-            <a href="#" class="header-container__search--link">
-              <svg class="header-container__search--icon"></svg>
+        <div class="header__btn-container">
+          <div class="btn-container-search">
+            <a href="#" class="btn-container-link-search">
+              <svg class="btn-container-icon-search"></svg>
             </a>
-            <section class="header-container__search--section search-section">
-              <h2 class="header-hidden"></h2>
+            <section class="search-section">
+              <h2 class="header-hidden">Поиск товара</h2>
               <form class="search-section__form" method="post" action="#">
                 <input
-                  class="search-section__form--input"
+                  class="search-section__form-input"
                   type="text"
                   name="search"
                   placeholder="Крем-брюле"
@@ -51,138 +52,264 @@
               </form>
             </section>
           </div>
-          <div class="header-container__login">
-            <a class="header-container__login--link" href="#">
+          <div class="btn-container-login">
+            <a class="btn-container-login-link" href="#">
               Вход
-              <svg class="header-container__login--icon"></svg>
+              <svg class="btn-container-login-icon"></svg>
             </a>
-            <section class="header-container__login--section login-section">
+            <section class="login-section">
+              <h2 class="header-hidden">Авторизация</h2>
               <form class="login-section__form" action="#" method="post">
                 <input
-                  class="login-section__form--email"
-                  type="mail"
+                  class="login-section__form-email"
+                  type="email"
                   placeholder="email@example.com"
                 />
                 <input
-                  class="login-section__form--password"
+                  class="login-section__form-password"
                   type="password"
                   placeholder="******"
                 />
-                <div class="login-section__form--container form-container">
-                  <button class="form-container__button">Войти</button>
-                </div>
-                <div class="login-section__form--container form-container">
-                  <a class="form-container__link" href="#">Забыли пароль?</a>
-                  <a class="form-container__link" href="#">Новая регистрация</a>
+                <div class="login-section__container">
+                  <button class="button login-section__btn">Войти</button>
+                  <div class="login-section__link-container">
+                    <a class="login-section__link" href="#">Забыли пароль?</a>
+                    <a class="login-section__link" href="#"
+                      >Новая регистрация</a
+                    >
+                  </div>
                 </div>
               </form>
             </section>
           </div>
-          <div class="header-container__backet">
-            <a href="#" class="header-container__backet--link">
+          <div class="btn-container-backet">
+            <a href="#" class="btn-container-backet-link">
               Пусто
-              <svg class="header-container__backet--icon"></svg>
+              <svg class="btn-container-backet-icon"></svg>
             </a>
           </div>
-        </nav>
         </div>
-        <div class="header__container--info container-info">
-          <p class="container-info__work-hours">с 10 до 20, ежедневно</p>
-          <a class="container-info__work-tel" href="tel:+78124502525"
-            >8 812 450-25-25</a
-          >
-        </div>
+      </nav>
+      <div class="header__container-info">
+        <p class="container-info-work-hours">с 10 до 20, ежедневно</p>
+        <a class="container-info-work-tel" href="tel:+78124502525"
+          >8 812 450-25-25</a
+        >
+      </div>
     </header>
     <main>
-      <section class='slider-section'>
-        <h1 class='header-hidden'>"Интернет-магазин мороженого Грейси"</h1>
+      <section class="slider-section">
+        <h1 class="header-hidden">Интернет-магазин мороженого Грейси</h1>
         <ul class="slider-section__list">
-          <li class="slider-section__items">
+          <li class="slider-section__item">
             <p>Крем-брюле и пломбир с малиновым джемом</p>
-            <a href="#" class="button slider-section__items--button">Давайте оба!</a></li>
-          <li class="slider-section__items">
+            <a href="#" class="button slider-section__item-button"
+              >Давайте оба!</a
+            >
+          </li>
+          <li class="slider-section__item">
             <p>Шоколадный пломбир и лимонный сорбет</p>
-            <a href="#" class="button slider-section__items--button">Давайте оба!</a></li>
-          <li class="slider-section__items">
+            <a href="#" class="button slider-section__item-button"
+              >Давайте оба!</a
+            >
+          </li>
+          <li class="slider-section__item">
             <p>Пломбир с помадкой и клубничный щербет</p>
-            <a href="#" class="button slider-section__items--button">Давайте оба!</a></li>
+            <a href="#" class="button slider-section__item-button"
+              >Давайте оба!</a
+            >
+          </li>
         </ul>
       </section>
-      <section class='banners-section'>
-        <h2 class='header-hidden'>Выгодные предложения</h2>
+      <section class="banners-section">
+        <h2 class="header-hidden">Выгодные предложения</h2>
         <article class="banners-section__lead section-lead">
           <h3 class="section-lead__header">Малинка даром!</h3>
-          <p>При покупке 2 кг любого фруктового мороженого, добавим в ваш заказ банку малинового варенья бесплатно.</p>
-          <a class='button section-lead__button' href="#">Хочу варенье!</a>
+          <p>
+            При покупке 2 кг любого фруктового мороженого, добавим в ваш заказ
+            банку малинового варенья бесплатно.
+          </p>
+          <a class="button section-lead__button" href="#">Хочу варенье!</a>
         </article>
         <article class="banners-section__lead section-lead">
           <h3 class="section-lead__header">Шоколадки даром!</h3>
-          <p>При покупке 2 кг пломбира, добавим в ваш заказ упаковку вкуснейшей шоколадной присыпки совершенно бесплатно.</p>
-          <a class='button section-lead__button' href="#">Хочу шоколадки</a>
+          <p>
+            При покупке 2 кг пломбира, добавим в ваш заказ упаковку вкуснейшей
+            шоколадной присыпки совершенно бесплатно.
+          </p>
+          <a class="button section-lead__button" href="#">Хочу шоколадки</a>
         </article>
       </section>
-      <section class='hits-section'>
-        <h2 class='header-hidden'>Виды мороженных</h2>
+      <section class="hits-section">
+        <h2 class="header-hidden">Виды мороженных</h2>
         <article class="hits-section__ice section-ice-1">
-          <h3 class='header-hidden'>Сливочное мороженное</h3>
-          <img src="" alt="" class="section-ice__hits-icon">
-          <img src="" alt="" class="section-ice__ice-pic-1">
+          <h3 class="header-hidden">Сливочное мороженное</h3>
+          <img src="" alt="" class="section-ice-hits-icon" />
+          <img src="" alt="" class="section-ice-ice-pic-1" />
           <p><span>310 ₽</span><span>/кг</span></p>
           <p>Сливочное с апельсиновым джемом и цитрусовой стружкой</p>
-          <a class='button section-ice__button' href="#">Быстрый просмотр</a>
+          <a class="button section-ice-button" href="#">Быстрый просмотр</a>
         </article>
         <article class="hits-section__ice section-ice-2">
-          <h3 class='header-hidden'>Шоколадное мороженное</h3>
-          <img src="" alt="" class="section-ice__hits-icon">
-          <img src="" alt="" class="section-ice__ice-pic-2">
+          <h3 class="header-hidden">Шоколадное мороженное</h3>
+          <img src="" alt="" class="section-ice-hits-icon" />
+          <img src="" alt="" class="section-ice-ice-pic-2" />
           <p><span>380 ₽</span><span>/кг</span></p>
           <p>Сливочно-кофейное с кусочками шоколада</p>
-          <a class='button section-ice__button' href="#">Быстрый просмотр</a>
+          <a class="button section-ice-button" href="#">Быстрый просмотр</a>
         </article>
         <article class="hits-section__ice section-ice-3">
-          <h3 class='header-hidden'>Клубничное мороженное</h3>
-          <img src="" alt="" class="section-ice__hits-icon">
-          <img src="" alt="" class="section-ice__ice-pic-3">
+          <h3 class="header-hidden">Клубничное мороженное</h3>
+          <img src="" alt="" class="section-ice-hits-icon" />
+          <img src="" alt="" class="section-ice-ice-pic-3" />
           <p><span>355 ₽</span><span>/кг</span></p>
           <p>Сливочно-клубничное с присыпкой из белого шоколада</p>
-          <a class='button section-ice__button' href="#">Быстрый просмотр</a>
+          <a class="button section-ice-button" href="#">Быстрый просмотр</a>
         </article>
         <article class="hits-section__ice section-ice-4">
-          <h3 class='header-hidden'>Карамельное мороженное</h3>
-          <img src="" alt="" class="section-ice__hits-icon">
-          <img src="" alt="" class="section-ice__ice-pic-4">
+          <h3 class="header-hidden">Карамельное мороженное</h3>
+          <img src="" alt="" class="section-ice-hits-icon" />
+          <img src="" alt="" class="section-ice-ice-pic-4" />
           <p><span>415 ₽</span><span>/кг</span></p>
-          <p>Сливочное крем-брюле с карамельной подливкой </p>
-          <a class='section-ice__button' href="#">Быстрый просмотр</a>
+          <p>Сливочное крем-брюле с карамельной подливкой</p>
+          <a class="button section-ice-button" href="#">Быстрый просмотр</a>
         </article>
       </section>
-      <section class='ceo-section'>
+      <section class="ceo-section">
         <h2 class="header-hidden">Преимущества магазина</h2>
         <ul class="ceo-section__list">
-          <li class="ceo-section__item">Все наше мороженое изготавливается на собственном производстве, с использованием современного оборудования и проверенных временем технологий.</li>
-          <li class="ceo-section__item">Закупка ингредиентов производится только у проверенных фермерских хозяйств и компаний, с которыми нас связывает долговременное сотрудничество.</li>
-          <li class="ceo-section__item">Для приготовления мороженого используются настоящие сливки и молоко высочайшего качества. Все дополнительные ингредиенты и добавки произведены из натурального, экологически чистого сырья.</li>
-          <li class="ceo-section__item">Доставка нашего мороженого до заказчиков осуществляется в специальном термопаке, который не дает мороженому растаять в пути и позволяет сохранить превосходный вкус.</li>
+          <li class="ceo-section__item">
+            Все наше мороженое изготавливается на собственном производстве, с
+            использованием современного оборудования и проверенных временем
+            технологий.
+          </li>
+          <li class="ceo-section__item">
+            Закупка ингредиентов производится только у проверенных фермерских
+            хозяйств и компаний, с которыми нас связывает долговременное
+            сотрудничество.
+          </li>
+          <li class="ceo-section__item">
+            Для приготовления мороженого используются настоящие сливки и молоко
+            высочайшего качества. Все дополнительные ингредиенты и добавки
+            произведены из натурального, экологически чистого сырья.
+          </li>
+          <li class="ceo-section__item">
+            Доставка нашего мороженого до заказчиков осуществляется в
+            специальном термопаке, который не дает мороженому растаять в пути и
+            позволяет сохранить превосходный вкус.
+          </li>
         </ul>
       </section>
-      <div class='sub-news-wrapper'>
-      <section class='news-section'>
-        <h2 class="header-hidden">Новости</h2>
-        <p class="news-section__p">Новое в нашем блоге</p>
-        <a class='news-section__link' href="#">10 способов сервировки фруктовых щербетов к столу</a>
+      <div class="sub-news-wrapper">
+        <section class="news-section">
+          <h2 class="header-hidden">Новости</h2>
+          <p class="news-section__p">Новое в нашем блоге</p>
+          <a class="news-section__link" href="#"
+            >10 способов сервировки фруктовых щербетов к столу</a
+          >
+        </section>
+        <section class="sub-section">
+          <h2 class="header-hidden">Подписка</h2>
+          <p class="sub-section__p">
+            Подпишитесь на нашу сладкую рассылку и будьте всегда в курсе всего
+            самого вкусного, что у нас происходит. Обещаем не спамить и не слать
+            всякой ненужной ерунды. Честно =)
+          </p>
+          <form class="sub-section__sub-form" action="#" method="post">
+            <input
+              class="sub-section__sub-form-input"
+              type="email"
+              name="email"
+              placeholder="email@example.com"
+            />
+            <button class="button sub-section__sub-form-button" type="submit">
+              Отправить
+            </button>
+          </form>
+        </section>
+      </div>
+      <section class="contact-section">
+        <h2 class="header-hidden">Контакты</h2>
+        <div class="contacts-container">
+          <p>
+            Адрес главного офиса и офлайн-магазина:
+            <span class="contacts-text"
+              >ул. Большая Конюшенная, 19/8, Санкт-Петербург</span
+            >
+          </p>
+          <p>
+            Для заказов по телефону:
+            <a class="contacts-text" href="tel:+78124502525">8 812 450-25-25</a>
+            (с 10 до 20 ежедневно)
+          </p>
+          <a class="button contacts-button" href="">Форма обратной связи</a>
+        </div>
+        <div class="map-container"></div>
       </section>
-      <section class='sub-section'>
-        <h2 class="header-hidden">Подписка</h2>
-        <p class="sub-section__p">Подпишитесь на нашу сладкую рассылку и будьте всегда в курсе всего самого вкусного, что у нас происходит. Обещаем не спамить и не слать всякой ненужной ерунды. Честно =)</p>
-        <form class='sub-section__sub-form' action="#" method='post'>
-          <input class='sub-section__sub-form--input' type="email" name='email' placeholder='email@example.com'>
-          <button class='button sub-section__sub-form--button' type='submit'>Отправить</button></form>
+      <section class="feedback-section">
+        <h2 class="header-hidden">Форма обратной связи</h2>
+        <p class="feedback-section__p">Мы обязательно вам ответим!</p>
+        <button
+          class="button feedback-section__button"
+          type="button"
+          aria-label="Закрывает модально окно"
+        >
+          <svg class="feedback-section__button-icon"></svg>
+        </button>
+        <form action="post" class="feedback-section__form">
+          <input
+            type="text"
+            name="name"
+            class="feedback-section__form-name"
+            placeholder="Имя Фамилия"
+          />
+          <input
+            type="email"
+            class="feedback-section__for"
+            placeholder="email@example.com"
+          />
+          <textarea
+            name="text"
+            cols="30"
+            rows="10"
+            placeholder="В свободной форме"
+            maxlength="10"
+          ></textarea>
+          <button type="submit" class="button feedback-section__btn"></button>
+        </form>
       </section>
-      <section class='contact-section'></section>
-    </div>
     </main>
     <footer>
-
+      <div class="socials-container">
+        <ul class="socials-list">
+          <li class="socials-item"><img src="" alt="" /></li>
+          <li class="socials-item"><img src="" alt="" /></li>
+          <li class="socials-item"><img src="" alt="" /></li>
+          <li class="socials-item"><img src="" alt="" /></li>
+        </ul>
+      </div>
+      <div class="info-container">
+        <ul class="info-list">
+          <li class="info-item">
+            <a href="#" class="info-item-link">Для поставщиков</a>
+          </li>
+          <li class="info-item">
+            <a href="#" class="info-item-link">Наши документы</a>
+          </li>
+          <li class="info-item">
+            <a href="#" class="info-item-link">О производстве</a>
+          </li>
+          <li class="info-item">
+            <a href="#" class="info-item-link">Экологические стандарты</a>
+          </li>
+        </ul>
+      </div>
+      <div class="copyright-container">
+        <a href="#" class="copyright-logo">
+          <img src="" alt="Логотип академии" />
+        </a>
+        <p class="copyright-text">Сделано в HTML Academy © 2024</p>
+      </div>
     </footer>
   </body>
 </html>
